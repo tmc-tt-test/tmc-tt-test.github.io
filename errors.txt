@@ -30,3 +30,20 @@ If you need more of the backtrace for any of these deprecations to
 identify where to make the necessary changes, you can configure
 `config.raise_errors_for_deprecations!`, and it will turn the
 deprecation warnings into errors, giving you the full backtrace.
+
+
+12.06.2015 12:03
+Commit: 05577db test fixes
+----------------
+PhantomJS has crashed. Please read the crash reporting guide at https://github.com/ariya/phantomjs/wiki/Crash-Reporting and file a bug report at https://github.com/ariya/phantomjs/issues/new with the crash dump file attached: /tmp/46423b0c-7ba9-38a7-1e6fbd72-32558a08.dmp
+PhantomJS has crashed. Please read the crash reporting guide at https://github.com/ariya/phantomjs/wiki/Crash-Reporting and file a bug report at https://github.com/ariya/phantomjs/issues/new with the crash dump file attached: /tmp/48cb80fe-c877-5fdc-4c33f9b1-7c431597.dmp
+
+Deprecation Warnings:
+
+Using `stub` from rspec-mocks' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:38:in `init_stubs!'.
+
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.
