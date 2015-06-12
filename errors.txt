@@ -47,3 +47,42 @@ If you need more of the backtrace for any of these deprecations to
 identify where to make the necessary changes, you can configure
 `config.raise_errors_for_deprecations!`, and it will turn the
 deprecation warnings into errors, giving you the full backtrace.
+
+
+12.06.2015 12:52
+Commit: 05577db test fixes
+----------------
+
+Exiting... Interrupt again to exit immediately.
+
+Deprecation Warnings:
+
+Using `stub` from rspec-mocks' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:38:in `init_stubs!'.
+
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.
+/home/tmc/tmc-server/spec/support/root_helper.rb:38:in `write': Broken pipe (Errno::EPIPE)
+	from /home/tmc/tmc-server/spec/support/root_helper.rb:38:in `stop'
+	from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:44:in `cleanup_after_all_tests!'
+	from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:101:in `block (2 levels) in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/example.rb:315:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/example.rb:315:in `instance_exec_with_rescue'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/hooks.rb:357:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/hooks.rb:427:in `block in run'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/hooks.rb:427:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/hooks.rb:427:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/hooks.rb:500:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/runner.rb:113:in `block in run_specs'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/reporter.rb:53:in `report'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/runner.rb:107:in `run_specs'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/runner.rb:85:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/runner.rb:69:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/lib/rspec/core/runner.rb:37:in `invoke'
+	from /usr/local/rvm/gems/ruby-2.2.0/gems/rspec-core-3.1.7/exe/rspec:4:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.0/bin/rspec:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.0/bin/rspec:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.0/bin/ruby_executable_hooks:15:in `<main>'
