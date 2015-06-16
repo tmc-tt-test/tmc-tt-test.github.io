@@ -222,3 +222,19 @@ If you need more of the backtrace for any of these deprecations to
 identify where to make the necessary changes, you can configure
 `config.raise_errors_for_deprecations!`, and it will turn the
 deprecation warnings into errors, giving you the full backtrace.
+
+
+16.06.2015 10:55
+Commit: 0a2886b Merge branch 'soft-deadlines' into integration
+----------------
+PhantomJS has crashed. Please read the crash reporting guide at https://github.com/ariya/phantomjs/wiki/Crash-Reporting and file a bug report at https://github.com/ariya/phantomjs/issues/new with the crash dump file attached: /tmp/252cc01a-4097-13c4-4c3807b7-057b4836.dmp
+
+Deprecation Warnings:
+
+Using `stub` from rspec-mocks' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:38:in `init_stubs!'.
+
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.
