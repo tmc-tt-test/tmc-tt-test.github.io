@@ -28,6 +28,7 @@ function log_message() {
 function run_tests() {
 	echo "$(_date): Running tests"
 	git reset --hard origin/integration > /dev/null
+	bundle install
 	rake db:migrate > /dev/null 2>&1
 	rake db:reset > /dev/null 2>&1
 	rake db:test:prepare
