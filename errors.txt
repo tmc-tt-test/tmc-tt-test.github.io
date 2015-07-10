@@ -855,3 +855,46 @@ If you need more of the backtrace for any of these deprecations to
 identify where to make the necessary changes, you can configure
 `config.raise_errors_for_deprecations!`, and it will turn the
 deprecation warnings into errors, giving you the full backtrace.
+
+
+10.07.2015 12:43
+Commit: 2a3f275 merge fixes
+----------------
+xprop:  unable to open display 'localhost:10.0'
+xprop:  unable to open display 'localhost:10.0'
+
+(process:13647): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: cannot open display: localhost:10.0
+
+(process:13653): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: cannot open display: localhost:10.0
+Warning: program returned non-zero exit code #1
+
+(process:13658): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: cannot open display: localhost:10.0
+
+(process:13663): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: cannot open display: localhost:10.0
+
+(process:13668): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Error: cannot open display: localhost:10.0
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: mozilla: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: epiphany: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: konqueror: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: chromium-browser: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: google-chrome: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: links2: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: links: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: lynx: not found
+/usr/bin/xdg-open: 461: /usr/bin/xdg-open: w3m: not found
+xdg-open: no method available for opening '/home/tmc/tmc-server/tmp/capybara/capybara-201507101245501274742746.html'
+
+Deprecation Warnings:
+
+Using `stub` from rspec-mocks' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:38:in `init_stubs!'.
+
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.
