@@ -1255,3 +1255,22 @@ If you need more of the backtrace for any of these deprecations to
 identify where to make the necessary changes, you can configure
 `config.raise_errors_for_deprecations!`, and it will turn the
 deprecation warnings into errors, giving you the full backtrace.
+
+
+27.08.2015 06:59
+Commit: 99336ec confirmation for email change and tests
+----------------
+PhantomJS has crashed. Please read the crash reporting guide at https://github.com/ariya/phantomjs/wiki/Crash-Reporting and file a bug report at https://github.com/ariya/phantomjs/issues/new with the crash dump file attached: /tmp/6c134d93-87fc-2168-4707c787-3e8ea0cf.dmp
+PhantomJS has crashed. Please read the crash reporting guide at https://github.com/ariya/phantomjs/wiki/Crash-Reporting and file a bug report at https://github.com/ariya/phantomjs/issues/new with the crash dump file attached: /tmp/7b74354b-b540-41eb-104e56d8-47d58edc.dmp
+
+Deprecation Warnings:
+
+Using `should` from rspec-expectations' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /home/tmc/tmc-server/spec/controllers/participants_controller_spec.rb:17:in `block (4 levels) in <top (required)>'.
+
+Using `stub` from rspec-mocks' old `:should` syntax without explicitly enabling the syntax is deprecated. Use the new `:expect` syntax or explicitly enable `:should` instead. Called from /home/tmc/tmc-server/spec/support/remote_sandbox_for_testing.rb:38:in `init_stubs!'.
+
+
+If you need more of the backtrace for any of these deprecations to
+identify where to make the necessary changes, you can configure
+`config.raise_errors_for_deprecations!`, and it will turn the
+deprecation warnings into errors, giving you the full backtrace.
